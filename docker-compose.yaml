@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+    backend:
+      build: .
+      command: uvicorn backend.main:app --host 0.0.0.0
+      volumes:
+        - .:/app
+      ports:
+        - "127.0.0.1:8000:8000"
+      env_file:
+        - backend/.env
+      depends_on:
+        - mongodb
+      networks:
+        - backend
+
+    postgres:
+      image: postgres
+      container_name: postgres
+      ports:
+      - '6500:5432'
+      restart: always
+      env_file:
+      - ./.env
+      volumes:
+      - postgres-db:/var/lib/postgresql/data
+
+volumes:
+  postgres-db:
+
