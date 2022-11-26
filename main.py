@@ -1,1 +1,0 @@
-from back.api.server import app

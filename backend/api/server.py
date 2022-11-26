@@ -2,9 +2,9 @@ from fastapi import FastAPI
 
 from beanie import init_beanie
 
-from back.routes import router as main_router
-from back.db.database import client
-from back.models.current_weather import __beanie_models__
+from backend.routes import router as main_router
+from backend.db.database import client
+from backend.models.current_weather import __beanie_models__
 
 
 def app_factory():

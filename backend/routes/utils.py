@@ -1,6 +1,6 @@
 from urllib.parse import urlencode
 
-from back.config import WEATHER_API_KEY
+from backend.config import WEATHER_API_KEY
 
 
 def build_weather_query(base_url: str, city: str, imperial=False) -> str:

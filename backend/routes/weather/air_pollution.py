@@ -2,7 +2,7 @@ from urllib.parse import urlencode
 import requests
 from fastapi import APIRouter
 
-from back.config import WEATHER_API_KEY
+from backend.config import WEATHER_API_KEY
 
 pollution_router = APIRouter(include_in_schema=True)
 

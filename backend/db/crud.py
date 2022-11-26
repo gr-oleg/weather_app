@@ -1,5 +1,5 @@
 from typing import List
-from back.models.current_weather import WeatherSchema, WeatherReport
+from backend.models.current_weather import WeatherSchema, WeatherReport
 
 
 async def create(report: WeatherSchema) -> WeatherSchema:

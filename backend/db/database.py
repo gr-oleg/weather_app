@@ -1,6 +1,6 @@
 from motor import motor_asyncio
 
-from back.config import settings
+from backend.config import settings
 
 
 client = motor_asyncio.AsyncIOMotorClient(settings)

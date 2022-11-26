@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from back.routes.weather.current import current_router
-from back.routes.weather.forecast import forecast_router
-from back.routes.weather.air_pollution import pollution_router
+from backend.routes.weather.current import current_router
+from backend.routes.weather.forecast import forecast_router
+from backend.routes.weather.air_pollution import pollution_router
 
 
 router = APIRouter()

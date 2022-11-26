@@ -2,8 +2,8 @@ import httpx
 from fastapi import APIRouter, HTTPException
 from beanie import PydanticObjectId
 
-from back.routes.utils import build_weather_query
-from back.db.crud import *
+from backend.routes.utils import build_weather_query
+from backend.db.crud import *
 
 
 current_router = APIRouter(include_in_schema=True)

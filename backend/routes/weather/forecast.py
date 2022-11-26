@@ -1,7 +1,7 @@
 import httpx
 from fastapi import APIRouter
 
-from back.routes.utils import build_weather_query
+from backend.routes.utils import build_weather_query
 
 forecast_router = APIRouter(include_in_schema=True)
 
